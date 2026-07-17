@@ -1,607 +1,443 @@
-import Link from "next/link";
-import Image from "next/image";export default function Home() {
+import Image from "next/image";
+
+export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-<nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-zinc-800">
+<nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md">
 
-  <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+  <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-    <h1 className="text-xl font-bold tracking-[0.3em]">
+    <h1 className="text-xl font-bold tracking-widest">
       MINA ADEL
     </h1>
 
-    <div className="hidden md:flex gap-8 text-sm tracking-widest">
-
-      <a href="#home" className="hover:text-zinc-300">
-        HOME
+<div className="hidden md:flex gap-6 text-sm">
+      <a href="#about">
+        About
       </a>
 
-      <a href="#about" className="hover:text-zinc-300">
-        ABOUT
+      <a href="#projects">
+        Projects
       </a>
-<section id="about" className="...">
 
-</section>
-      <a href="#credits" className="hover:text-zinc-300">
-        CREDITS
+      <a href="#gallery">
+        Gallery
       </a>
-<section id="credits" className="...">
 
-</section>
-      <a href="#bts" className="hover:text-zinc-300">
-        BTS
+      <a href="#contact">
+        Contact
       </a>
-<section id="bts" className="...">
 
-</section>
-      <a href="#equipment" className="hover:text-zinc-300">
-        EQUIPMENT
-      </a>
-<section id="equipment" className="...">
-
-</section>
-      <a href="#contact" className="hover:text-zinc-300">
-        CONTACT
-      </a>
-<section id="contact" className="...">
-
-</section>
     </div>
 
   </div>
 
 </nav>
-      <section className="relative min-h-screen flex items-center px-8 md:px-20 overflow-hidden">
-<div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1">
+<section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
+        <Image
+  src="/hero.jpg"
+  alt="Mina Adel"
+  fill
+  className="object-cover"
+  priority
+/>
+<div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center px-6">
 
-  {[
-    "hero-1.jpg",
-    "hero-2.jpg",
-    "hero-3.jpg",
-    "hero-4.jpg",
-    "hero-5.jpg",
-    "hero-6.jpg",
-  ].map((img) => (
-    <div key={img} className="relative">
-      <Image
-        src={`/images/hero/${img}`}
-        alt="Mina on set"
-        fill
-        sizes="(max-width: 768px) 100vw, 33vw"
-        className="object-cover"
-      />
-    </div>
-  ))}
-
-</div>
-
-<div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
-
-        <div className="relative z-10 max-w-5xl">
-
-          <p className="text-sm tracking-[0.5em] text-zinc-400">
-            DIGITAL IMAGING TECHNICIAN
-          </p>
-
-          <h1 className="mt-6 text-7xl md:text-9xl font-bold tracking-wider">
-            MINA
-            <br />
-            ADEL
-          </h1>
-          
-
-<section className="px-8 md:px-20 py-24 bg-zinc-950">
-  <div className="grid md:grid-cols-2 gap-12 items-center">
-
-    <div>
-      <p className="text-sm tracking-[0.4em] text-zinc-500">
-        ABOUT ME
-      </p>
-
-      <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-        MINA ADEL
-      </h2>
-
-      <p className="mt-6 text-zinc-400 leading-8">
-        Digital Imaging Technician and Cinematic Camera Technician
-        working with professional cinema cameras and digital workflows.
-        Experienced in Egyptian cinema, television productions and
-        international projects.
-      </p>
-    </div>
-
-    <div className="flex justify-center">
-      <Image
-        src="/images/Mina-portfolio.jpg"
-        alt="Mina Adel"
-        width={450}
-        height={600}
-        className="rounded-xl object-cover"
-      />
-    </div>
-
-  </div>
-</section>
-<section className="px-8 md:px-20 py-24 bg-black">
-
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    SELECTED WORKS
-  </p>
-
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    FILM & TV CREDITS
-  </h2>
-
-  <div className="mt-12 grid md:grid-cols-3 gap-8">
-
-    <Image
-      src="/images/FILM & TV CREDITS/project-1.jpg"
-      alt="Project 1"
-      width={600}
-      height={400}
-className="rounded-xl object-cover w-full h-[520px] transition-all duration-300 hover:scale-105 hover:shadow-2xl"    />
-  <h3 className="mt-4 text-xl font-sed">
-
-     نواره
-     
-    
-
-  </h3>
-
-  <p className="text-zinc-400">
-
-    DIT / Camera Technician
-
-  </p>
-    <Image
-      src="/images/FILM & TV CREDITS/project-2.jpg"
-      alt="Project 2"
-      width={600}
-      height={400}
-className="rounded-xl object-cover w-full h-[520px] transition-all duration-300 hover:scale-105 hover:shadow-2xl"    />
-  <h3 className="mt-4 text-xl font-semibold">
-
-     الخليه
-
-  </h3>
-
-  <p className="text-zinc-400">
-
-    DIT / Camera Technician
-
-  </p>
-    <Image
-      src="/images/FILM & TV CREDITS/project-3.jpg"
-      alt="Project 3"
-      width={600}
-      height={400}
-className="rounded-xl object-cover w-full h-[520px] transition-all duration-300 hover:scale-105 hover:shadow-2xl"    />
-  <h3 className="mt-4 text-xl font-semibold">
-
-     كازابلانكا
-
-  </h3>
-
-  <p className="text-zinc-400">
-
-    DIT / Camera Technician
-
-  </p>
-  </div>
-<section className="px-8 md:px-20 py-24 bg-black">
-
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    DIT SETUP
-  </p>
-
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    CAMERA & WORKFLOW
-  </h2>
-
-  <p className="mt-6 max-w-3xl text-zinc-400 leading-8">
-    Professional digital workflow, cinema camera systems,
-    data management and on-set DIT solutions.
-  </p>
-
-  <div className="mt-12 grid md:grid-cols-4 gap-6">
-
-    <Image
-      src="/images/equipment/equipment-1.jpg"
-      alt="DIT Setup"
-      width={500}
-      height={400}
-      className="rounded-xl object-cover"
-    />
-
-    <Image
-      src="/images/equipment/equipment-2.jpg"
-      alt="Camera Equipment"
-      width={500}
-      height={400}
-      className="rounded-xl object-cover"
-    />
-
-    <Image
-      src="/images/equipment/equipment-3.jpg"
-      alt="Cinema Workflow"
-      width={500}
-      height={400}
-      className="rounded-xl object-cover"
-    />
-
-    <Image
-      src="/images/equipment/equipment-4.jpg"
-      alt="On Set Equipment"
-      width={500}
-      height={400}
-      className="rounded-xl object-cover"
-    />
-
-  </div>
-<section className="px-8 md:px-20 py-24 bg-zinc-950">
-
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    CAMERA SYSTEMS
-  </p>
-
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    CINEMA CAMERAS
-  </h2>
-
-  <div className="mt-12 grid md:grid-cols-4 gap-8">
-
-    <div>
-      <Image
-        src="/images/cameras/arri35.jpg"
-        alt="ARRI Alexa 35"
-        width={500}
-        height={400}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">ARRI Alexa 35</p>
-    </div>
-
-    <div>
-      <Image
-        src="/images/cameras/red.jpg"
-        alt="RED Camera"
-        width={500}
-        height={400}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">RED Cinema</p>
-    </div>
-
-    <div>
-      <Image
-        src="/images/cameras/venice.jpg"
-        alt="Sony Venice"
-        width={500}
-        height={400}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">Sony Venice</p>
-    </div>
-
-    <div>
-      <Image
-        src="/images/cameras/arri alexa.jpg"
-        alt="ARRI 35"
-        width={500}
-        height={400}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">ARRI 35</p>
-    </div>
- <Image
-        src="/images/cameras/alexamini.jpg"
-        alt="Sony Venice"
-        width={500}
-        height={400}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">Sony Venice</p>
-   </div>
-
-</section>
-</section>
-</section><section className="px-8 md:px-20 py-24 bg-black">
-
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    DIT SOFTWARE
-  </p>
-
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    DIGITAL WORKFLOW
-  </h2>
-
-  <div className="mt-12 grid md:grid-cols-3 gap-8">
-
-    <div>
-      <Image
-        src="/images/software/shotput pro.jpg"
-        alt="Hedge"
-        width={500}
-        height={300}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">Hedge - Data Management</p>
-    </div>
-
-    <div>
-      <Image
-        src="/images/software/obs.jpg"
-        alt="OBS"
-        width={500}
-        height={300}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">OBS Workflow</p>
-    </div>
-
- <div>
-      <Image
-        src="/images/software/offshoot.jpg"
-        alt="OBS"
-        width={500}
-        height={300}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">OBS Workflow</p>
-    </div>
-
-    <div>
-      <Image
-        src="/images/software/DaVinci_Resolve_Studio.jpg"
-        alt="DIT Workflow"
-        width={500}
-        height={300}
-        className="rounded-xl object-cover"
-      />
-      <p className="mt-4 text-zinc-400">On Set Digital Workflow</p>
-    </div>
-      
-  </div>
-
-</section>
-          <h2 className="mt-8 text-2xl md:text-4xl text-zinc-300">
-            Cinematic Camera Technician
+<h1 className="text-4xl md:text-8xl font-bold tracking-[0.2em]">  MINA ADEL
+</h1>
+<p className="mt-4 text-sm md:text-lg tracking-widest text-gray-300">
+  DIGITAL IMAGING TECHNICIAN
+</p>
+          <h2 className="mt-4 text-xl md:text-2xl">
+            DIT | Cinematic Camera Technician
           </h2>
 
-          <p className="mt-8 max-w-2xl text-lg text-zinc-400 leading-9">
-            Professional digital workflow for cinema and television.
-            Working with high-end cinema cameras and international
-            productions.
+          <p className="mt-6 text-gray-300">
+            Digital Imaging Technician working in Egyptian Cinema,
+            TV Series and International Productions.
           </p>
-
-          <div className="mt-10 flex gap-5">
-
-            <button className="px-10 py-4 bg-white text-black tracking-widest">
-              PORTFOLIO
-            </button>
-
-            <button className="px-10 py-4 border border-zinc-600 tracking-widest">
-              CONTACT
-            </button>
-
-          </div>
 
         </div>
 
       </section>
-<section className="px-8 md:px-20 py-24 bg-zinc-950">
 
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    SELECTED EXPERIENCE
-  </p>
+      <section className="bg-black text-white py-20 px-6">
 
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    CINEMA & PRODUCTIONS
-  </h2>
+        <div className="max-w-4xl mx-auto text-center">
 
-  <div className="mt-12 grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-widest">
+            ABOUT ME
+          </h2>
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        Egyptian Cinema
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Feature films and television productions
-        working with professional cinema crews.
-      </p>
-    </div>
+          <p className="mt-8 text-gray-300 text-lg leading-8">
+  Mina Adel is a Digital Imaging Technician and Cinematic Camera Technician
+  with experience in Egyptian Cinema and TV productions.
+  Worked on international productions across Yemen, Oman, Qatar and Morocco,
+  including Netflix productions and the first Yemeni feature film.
+  Specialized in camera systems, media management and professional on-set workflow.
+</p>
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        Netflix Production
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Digital Imaging workflow for
-        international streaming productions.
-      </p>
-    </div>
+        </div>
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        International Projects
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Yemen, Oman, Qatar, Morocco and
-        international cinema projects.
-      </p>
+      </section>
+<section className="bg-black text-white py-20 px-6">
+
+  <div className="max-w-6xl mx-auto">
+
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      CAMERA SYSTEMS
+      Working experience with professional cinema camera systems:
+ARRI Alexa 35 • Sony Venice • RED Epic • ARRI 35
+    </h2>
+<div className="grid md:grid-cols-4 gap-6 mt-12">
+
+  <div className="overflow-hidden border border-gray-800">
+    <Image
+      src="/images/cameras/arri alexa.jpg"
+      alt="ARRI Alexa 35"
+      width={500}
+      height={500}
+      className="w-full h-64 object-cover"
+    />
+    <h3 className="p-4 text-center">
+      ARRI Alexa 
+    </h3>
+  </div>
+
+
+  <div className="overflow-hidden border border-gray-800">
+    <Image
+      src="/images/cameras/venice.jpg"
+      alt="Sony Venice"
+      width={500}
+      height={500}
+      className="w-full h-64 object-cover"
+    />
+    <h3 className="p-4 text-center">
+      Sony Venice
+    </h3>
+  </div>
+
+
+  <div className="overflow-hidden border border-gray-800">
+    <Image
+      src="/images/cameras/red.jpg"
+      alt="RED Epic"
+      width={500}
+      height={500}
+      className="w-full h-64 object-cover"
+    />
+    <h3 className="p-4 text-center">
+      RED Epic
+    </h3>
+  </div>
+
+
+  <div className="overflow-hidden border border-gray-800">
+    <Image
+      src="/images/cameras/arri35.jpg"
+      alt="ARRI 35"
+      width={500}
+      height={500}
+      className="w-full h-64 object-cover"
+    />
+    <h3 className="p-4 text-center">
+      ARRI 35
+    </h3>
+  </div>
+
+  
     </div>
 
   </div>
 
 </section>
-  <section className="px-8 md:px-20 py-24 bg-black">
+<section className="bg-black text-white py-20 px-6">
 
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    CINEMA GEAR
-  </p>
+  <div className="max-w-6xl mx-auto">
 
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    CAMERA SYSTEMS
-  </h2>
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      PROJECTS
+    </h2>
 
-  <div className="mt-12 grid md:grid-cols-4 gap-6">
+    <div className="grid md:grid-cols-2 gap-8 mt-12">
 
-    <div className="border border-zinc-800 p-8 hover:border-white transition">
-      <h3 className="text-2xl font-semibold">
-        ARRI Alexa 35
+  <div className="relative overflow-hidden">
+    <Image
+      src="/images/projects/project1.jpg"
+      alt="Film Project"
+      width={900}
+      height={600}
+      className="w-full h-80 object-cover"
+    />
+
+    <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4">
+      <h3 className="text-xl">
+EGYPTIAN CINEMA & TV
+Feature Films and Television Series      </h3>
+    </div>
+  </div>
+
+
+  <div className="relative overflow-hidden">
+    <Image
+      src="/images/projects/project2.jpg"
+      alt="Netflix Production"
+      width={900}
+      height={600}
+      className="w-full h-80 object-cover"
+    />
+
+    <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4">
+      <h3 className="text-xl">
+NETFLIX PRODUCTION
+Kuwaiti Series Production      </h3>
+    </div>
+  </div>
+
+
+  <div className="relative overflow-hidden">
+    <Image
+      src="/images/projects/project3.jpg"
+      alt="International Production"
+      width={900}
+      height={600}
+      className="w-full h-80 object-cover"
+    />
+
+    <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4">
+      <h3 className="text-xl">
+INTERNATIONAL PROJECTS
+Yemen • Oman • Qatar • Morocco • Kuwait     </h3>
+    </div>
+  </div>
+
+
+  <div className="relative overflow-hidden">
+    <Image
+      src="/images/projects/project4.jpg"
+      alt="DIT Work"
+      width={900}
+      height={600}
+      className="w-full h-80 object-cover"
+    />
+
+    <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4">
+      <h3 className="text-xl">
+        DIT On Set
       </h3>
-      <p className="mt-4 text-zinc-400">
-        High-end digital cinema camera workflow.
-      </p>
+    </div>
+  </div>
+
+</div>
+  </div>
+
+</section>
+<section className="bg-black text-white py-20 px-6">
+
+  <div className="max-w-6xl mx-auto">
+
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      GALLERY
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-6 mt-12">
+
+      <Image
+        src="/images/camera.jpg"
+        alt="Cinema Camera"
+        width={800}
+        height={600}
+        className="w-full h-auto object-cover"
+      />
+
+      <Image
+        src="/images/camera.jpg"
+        alt="DIT Station"
+        width={800}
+        height={600}
+        className="w-full h-auto object-cover"
+      />
+
+      <Image
+        src="/images/camera.jpg"
+        alt="Film Set"
+        width={800}
+        height={600}
+        className="w-full h-auto object-cover"
+      />
+
     </div>
 
-    <div className="border border-zinc-800 p-8 hover:border-white transition">
-      <h3 className="text-2xl font-semibold">
-        ARRI 35
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Professional cinematic production system.
-      </p>
-    </div>
+  </div>
+<section className="bg-black text-white py-20 px-6">
 
-    <div className="border border-zinc-800 p-8 hover:border-white transition">
-      <h3 className="text-2xl font-semibold">
-        RED Epic
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Digital cinema camera workflow.
-      </p>
-    </div>
+  <div className="max-w-6xl mx-auto">
 
-    <div className="border border-zinc-800 p-8 hover:border-white transition">
-      <h3 className="text-2xl font-semibold">
-        Sony Venice
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Full-frame cinema camera system.
-      </p>
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      BEHIND THE SCENES
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-8 mt-12">
+
+      <div className="border border-gray-800 overflow-hidden">
+
+        <video
+          controls
+          className="w-full"
+        >
+          <source src="/videos/dit-work.mp4" type="video/mp4" />
+        </video>
+
+        <h3 className="p-4">
+          DIT Workflow On Set
+        </h3>
+
+      </div>
+
+
+      <div className="border border-gray-800 overflow-hidden">
+
+        <video
+          controls
+          className="w-full"
+        >
+          <source src="/videos/behind-scenes.mp4" type="video/mp4" />
+        </video>
+
+        <h3 className="p-4">
+          Behind The Scenes
+        </h3>
+
+      </div>
+
     </div>
 
   </div>
 
 </section>
-  <section className="px-8 md:px-20 py-24 bg-zinc-950">
+</section>
+<section className="bg-black text-white py-20 px-6">
 
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    DIGITAL WORKFLOW
-  </p>
+  <div className="max-w-6xl mx-auto">
 
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    DIT ON SET
-  </h2>
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      DIT WORKFLOW
+    </h2>
 
-  <div className="mt-12 grid md:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-4 gap-6 mt-12">
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        Data Management
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Secure offload, verification and organized
-        media management for professional productions.
-      </p>
-    </div>
+      <div className="border border-gray-700 p-6 text-center">
+        <h3 className="text-xl font-semibold">
+          Data Management
+        </h3>
+        <p className="mt-3 text-gray-400">
+          Professional media handling and organization on set.
+        </p>
+      </div>
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        On Set Workflow
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Camera media handling, backup workflow
-        and communication with the camera team.
-      </p>
-    </div>
+      <div className="border border-gray-700 p-6 text-center">
+        <h3 className="text-xl font-semibold">
+          Backup
+        </h3>
+        <p className="mt-3 text-gray-400">
+          Secure backup workflow for production footage.
+        </p>
+      </div>
 
-    <div className="border border-zinc-800 p-8">
-      <h3 className="text-2xl font-semibold">
-        Tools & Systems
-      </h3>
-      <p className="mt-4 text-zinc-400">
-        Hedge, OBS and professional DIT workstation
-        setup.
-      </p>
+      <div className="border border-gray-700 p-6 text-center">
+        <h3 className="text-xl font-semibold">
+          Media Transfer
+        </h3>
+        <p className="mt-3 text-gray-400">
+          Fast and reliable camera media transfer.
+        </p>
+      </div>
+
+      <div className="border border-gray-700 p-6 text-center">
+        <h3 className="text-xl font-semibold">
+          On Set Support
+        </h3>
+        <p className="mt-3 text-gray-400">
+          Supporting cinematographers and camera teams.
+        </p>
+      </div>
+
     </div>
 
   </div>
 
 </section>
-  <section className="px-8 md:px-20 py-24 bg-black">
+<section className="bg-black text-white py-20 px-6">
 
-  <p className="text-sm tracking-[0.4em] text-zinc-500">
-    SELECTED PROJECTS
-  </p>
+  <div className="max-w-6xl mx-auto">
 
-  <h2 className="mt-5 text-4xl md:text-6xl font-bold">
-    PRODUCTIONS
-  </h2>
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest text-center">
+      TOOLS
+    </h2>
 
-  <div className="mt-12 space-y-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
 
-    <div className="border-l border-zinc-700 pl-8">
-      <h3 className="text-2xl font-semibold">
-        Egyptian Cinema & TV Series
-      </h3>
-      <p className="mt-3 text-zinc-400">
-        Digital Imaging Technician and Camera Technician
-        working on Egyptian film and television productions.
-      </p>
-    </div>
+      <div className="border border-gray-700 p-6 text-center">
+        Hedge
+      </div>
 
-    <div className="border-l border-zinc-700 pl-8">
-      <h3 className="text-2xl font-semibold">
-        Netflix Production - Kuwait Series
-      </h3>
-      <p className="mt-3 text-zinc-400">
-        DIT workflow and camera department support
-        for a Netflix Kuwaiti production.
-      </p>
-    </div>
+      <div className="border border-gray-700 p-6 text-center">
+        OBS
+      </div>
 
-    <div className="border-l border-zinc-700 pl-8">
-      <h3 className="text-2xl font-semibold">
-        First Yemeni Feature Film
-      </h3>
-      <p className="mt-3 text-zinc-400">
-        Contribution to the first Yemeni feature film
-        production.
-      </p>
-    </div>
+      <div className="border border-gray-700 p-6 text-center">
+        Desktop Video
+      </div>
 
-    <div className="border-l border-zinc-700 pl-8">
-      <h3 className="text-2xl font-semibold">
-        International Projects
-      </h3>
-      <p className="mt-3 text-zinc-400">
-        Productions across Oman, Kuwait, Morocco
-        and international cinema projects.
-      </p>
+      <div className="border border-gray-700 p-6 text-center">
+        DIT Workflow
+      </div>
+
     </div>
 
   </div>
 
 </section>
-<section
-  id="contact"
-  className="px-8 md:px-20 py-24 bg-black text-center border-t border-zinc-800"
+
+
+<section className="bg-black text-white py-20 px-6">
+
+  <div className="max-w-4xl mx-auto text-center">
+
+    <h2 className="text-3xl md:text-5xl font-bold tracking-widest">
+      CONTACT
+    </h2>
+
+    <p className="mt-8 text-gray-300 text-xl">
+      Available for Cinema & TV Productions
+    </p>
+
+    <p className="mt-4 text-gray-400">
+      Instagram: @minaadel
+    </p>
+<a
+  href="https://instagram.com/minaadel"
+  target="_blank"
+  className="inline-block mt-6 border border-white px-8 py-3 tracking-widest hover:bg-white hover:text-black transition"
 >
-  <h2 className="text-5xl font-bold">Let's Work Together</h2>
+  INSTAGRAM @MINAADEL
+</a>
+  </div>
 
-  <p className="mt-6 text-zinc-400">
-    Digital Imaging Technician & Camera Technician
+</section>
+<footer className="bg-black text-gray-500 py-8 text-center border-t border-gray-800">
+
+  <p>
+    © 2026 MINA ADEL
   </p>
 
-  <div className="mt-10 space-y-3 text-lg">
-    <p>Email: menaadel1988@gmail.com</p>
-    <p>Instagram: @minaadel</p>
-    <p>Location: Egypt</p>
-  </div>
-</section>
-</main>
+  <p className="mt-2">
+    DIT | Cinematic Camera Technician
+  </p>
+
+</footer>
+    </main>
   );
 }
