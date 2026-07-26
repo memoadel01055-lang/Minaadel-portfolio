@@ -1,7 +1,7 @@
 export default function WhatsApp() {
   return (
     <a
-      href="https://wa.me/2010005535402"
+      href="https://wa.me/201005535402"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp"
