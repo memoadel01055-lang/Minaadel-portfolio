@@ -16,6 +16,12 @@ import WhatsApp from "@/components/WhatsApp";
 export default function Home() {
   return (
     <main>
+
+  <h1 className="text-red-600 text-6xl">
+
+    PAGE TEST MINA
+
+  </h1>
       <Navbar />
       <Hero />
       <About />
