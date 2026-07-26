@@ -31,8 +31,10 @@ export default function About() {
           </h3>
 
           <p className="mt-8 text-gray-400 leading-8 text-lg">
-            Digital Imaging Technician working in Egyptian cinema,
-            TV series and international productions.
+            Digital Imaging Technician and Cinematic 
+            Camera Technician with extensive experience across feature films,
+             TV series, commercials, and international productions. Specialized in professional camera
+              systems, secure data management, and efficient on-set workflows
           </p>
 
           <p className="mt-6 text-gray-400 leading-8 text-lg">

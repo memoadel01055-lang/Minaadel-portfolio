@@ -1,19 +1,19 @@
 const productions = [
   {
     title: "Kazblanka",
-    video: "/videos/كازابلانكا..mp4",
+    video: "/videos/kazablanka.mp4",
   },
   {
     title: "Nawara",
-    video: "/videos/نوارة.mp4",
+    video: "/videos/nawara.mp4",
   },
   {
     title: "El Tofan",
-    video: "/videos/الطوفان.mp4",
+    video: "/videos/el-tofan.mp4",
   },
   {
     title: "Suits",
-    video: "/videos/سوتس_بالعربي.mp4",
+    video: "/videos/suits-belaraby.mp4",
   },
   {
     title: "Netflix Series",
