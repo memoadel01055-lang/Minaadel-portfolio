@@ -7,7 +7,6 @@ import CameraSystems from "@/components/CameraSystems";
 import Workflow from "@/components/Workflow";
 import Projects from "@/components/Projects";
 import ProductionArchive from "@/components/ProductionArchive";
-import Clients from "@/components/Clients";
 import Gallery from "@/components/Gallery";
 import BTS from "@/components/BTS";
 import DITSetup from "@/components/DITSetup";
@@ -34,7 +33,6 @@ export default function Home() {
       <Workflow />
       <Projects />
       <ProductionArchive />
-      <Clients />
       <Gallery />
       <BTS />
       <DITSetup />
