@@ -17,7 +17,6 @@ export default function About() {
             className="rounded-lg object-cover"
           />
         </div>
-grep 'src=' components/About.tsx
         <div>
           <p className="text-sm tracking-[0.4em] text-gray-400 uppercase">
             About Me
