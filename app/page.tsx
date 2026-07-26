@@ -8,6 +8,7 @@ import Workflow from "@/components/Workflow";
 import Projects from "@/components/Projects";
 import ProductionArchive from "@/components/ProductionArchive";
 import Gallery from "@/components/Gallery";
+import BTS from "@/components/BTS";
 import Showreel from "@/components/Showreel";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ export default function Home() {
       <Projects />
       <ProductionArchive />
       <Gallery />
+      <BTS />
       <Showreel />
       <Contact />
       <Footer />
