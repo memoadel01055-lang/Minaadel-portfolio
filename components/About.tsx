@@ -10,14 +10,14 @@ export default function About() {
 
         <div>
           <Image
-            src="/images/profile.jpg"
+            src="/images/profile.JPG"
             alt="Mina Adel"
             width={600}
             height={600}
             className="rounded-lg object-cover"
           />
         </div>
-
+grep 'src=' components/About.tsx
         <div>
           <p className="text-sm tracking-[0.4em] text-gray-400 uppercase">
             About Me
