@@ -7,6 +7,9 @@ const gallery = [
   "/images/projects/set/4.jpg",
   "/images/projects/set/5.jpg",
   "/images/projects/set/6.jpg",
+  "/images/projects/set/hero-10.jpg",
+  "/images/projects/set/set3.JPG",
+  "/images/projects/set/set4.jpg",
 ];
 
 export default function Gallery() {
