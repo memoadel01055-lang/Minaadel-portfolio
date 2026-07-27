@@ -5,19 +5,11 @@ const videos = [
   },
   {
     title: "Kazablanka",
-    video: "/videos/كازابلانكا..mp4",
-  },
-  {
-    title: "Nawara",
-    video: "/videos/نوارة .mp4",
+    video: "/videos/kazablanka.mp4",
   },
   {
     title: "Suits",
-    video: "/videos/سوتس_بالعربي.mp4",
-  },
-  {
-    title: "Behind The Scenes",
-    video: "/videos/bts.mp4",
+    video: "/videos/suits-belaraby.mp4",
   },
   {
     title: "Showreel 2026",
@@ -57,11 +49,12 @@ export default function Showreel() {
               "
             >
 
-              <video
-                controls
-                preload="metadata"
-                className="w-full aspect-video object-cover"
-              >
+             <video
+  controls
+  preload="none"
+  playsInline
+  className="w-full aspect-video object-cover"
+>
                 <source
                   src={item.video}
                   type="video/mp4"
