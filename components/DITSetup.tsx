@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const ditImages = [
   "/images/dit setup/dit.jpg",
@@ -9,12 +12,15 @@ const ditImages = [
   "/images/dit setup/3b6d386.jpg",
   "/images/dit setup/IMG_2502 2.jpg",
   "/images/dit setup/IMG_2503 2.jpg",
-  "/images/dit setup/DSC0384.jpg",
 ];
 
 export default function DITSetup() {
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section className="bg-black text-white py-24 px-6" id="dit-setup">
+
       <div className="max-w-7xl mx-auto">
 
         <p className="text-sm tracking-[0.4em] uppercase text-gray-400">
@@ -31,24 +37,53 @@ export default function DITSetup() {
           secure backup workflow and camera support.
         </p>
 
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+
           {ditImages.map((image) => (
-            <div
+
+            <button
               key={image}
+              onClick={() => setSelectedImage(image)}
               className="relative aspect-square overflow-hidden rounded-xl group"
             >
+
               <Image
                 src={image}
                 alt="DIT Setup"
                 fill
-                sizes="(max-width:768px)50vw,33vw"
+                sizes="(max-width:768px) 50vw,33vw"
                 className="object-cover transition duration-700 group-hover:scale-110"
               />
-            </div>
+
+            </button>
+
           ))}
+
         </div>
 
       </div>
+
+
+      {selectedImage && (
+
+        <div
+          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-6"
+        >
+
+          <Image
+            src={selectedImage}
+            alt="DIT Setup Preview"
+            width={1400}
+            height={1000}
+            className="max-h-[90vh] w-auto object-contain"
+          />
+
+        </div>
+
+      )}
+
     </section>
   );
 }
