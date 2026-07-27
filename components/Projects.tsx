@@ -27,7 +27,7 @@ const projects = [
     role: "DIT / Cinematic Camera Technician",
     description:
       "On-set camera and data workflow support.",
-    image: "/images/projects/posters/sign elnsa.jpg",
+    image: "/images/projects/posters/sign-elnsa.jpg",
   },
   {
     title: "drakora3",
@@ -62,7 +62,6 @@ export default function Projects() {
           Projects
         </h2>
 
-sizes="(max-width: 768px) 100vw, 33vw"
         <div className="grid md:grid-cols-3 gap-8 mt-12">
 
   {projects.map((project, index) => (
@@ -79,13 +78,13 @@ sizes="(max-width: 768px) 100vw, 33vw"
       "
     >         
 
-              <div className="relative h-[420px] overflow-hidden">
+              <div className="relative h-[320px] md:h-[420px] overflow-hidden">
 
                 <Image
   src={project.image}
   alt={project.title}
   fill
-  sizes="(max-width:768px)100vw,(max-width:1200px)50vw,33vw"
+  
   className="object-cover group-hover:scale-105 transition duration-700"
 />
               </div>

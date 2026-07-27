@@ -62,10 +62,10 @@ export default function Showreel() {
             >
 
              <video
-  controls
-  preload="none"
-  playsInline
-  className="w-full aspect-video object-cover"
+controls
+preload="metadata"
+playsInline
+className="w-full aspect-video object-cover"
 >
                 <source
                   src={item.video}
