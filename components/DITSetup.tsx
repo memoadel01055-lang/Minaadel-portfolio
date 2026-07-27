@@ -11,7 +11,6 @@ const ditImages = [
   "/images/dit setup/ultraStudio.jpg",
   "/images/dit setup/3b6d386.jpg",
   "/images/dit setup/IMG_2503 2.jpg",
-  "/images/dit setup/DSC0384.jpg",
   "/images/dit setup/Screenshot.jpg",
   "/images/dit setup/Screenshot 20.jpg",
   "/images/dit setup/Screenshot 2026.jpg",
