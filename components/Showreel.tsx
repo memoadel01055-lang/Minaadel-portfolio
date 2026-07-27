@@ -4,12 +4,12 @@ const videos = [
     video: "/videos/netflix-series.mp4",
   },
   {
-    title: "Kazablanka",
-    video: "/videos/kazablanka.mp4",
+    title: "lahzetgadab",
+    video: "/videos/lahzetgadab.mp4",
   },
   {
-    title: "Suits",
-    video: "/videos/suits-belaraby.mp4",
+    title: "khalya",
+    video: "/videos/khalya.mp4",
   },
   {
     title: "Showreel 2026",
