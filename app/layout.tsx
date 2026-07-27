@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Mina Adel | DIT & Cinematic Camera Technician",
+  title: "Mina Adel | Digital Imaging Technician",
   description:
-    "Mina Adel - Digital Imaging Technician and Cinematic Camera Technician",
+    "Professional Digital Imaging Technician specializing in feature films, TV series and international productions.",
 };
 
 export default function RootLayout({
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>
+      <body>
         {children}
       </body>
     </html>

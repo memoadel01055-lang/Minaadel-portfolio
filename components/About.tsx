@@ -21,7 +21,22 @@ export default function About() {
           <p className="text-sm tracking-[0.4em] text-gray-400 uppercase">
             About Me
           </p>
+15+
+Years Experience
 
+100+
+Productions
+
+Feature
+Films
+
+International
+Projects
+MINA ADEL
+
+Digital Imaging Technician
+
+© 2026 All Rights Reserved.
           <h2 className="mt-6 text-4xl md:text-6xl font-bold">
             MINA ADEL
           </h2>
