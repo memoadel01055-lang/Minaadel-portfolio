@@ -1,23 +1,35 @@
 const videos = [
   {
     title: "Netflix Series",
+    category: "International Production",
     video: "/videos/netflix-series.mp4",
   },
   {
-    title: "lahzetgadab",
-    video: "/videos/lahzetgadab.mp4",
+    title: "lahzet-ghadab",
+    category: "TV Series",
+    video: "/videos/lahzet-ghadab.MP4",
   },
   {
-    title: "khalya",
+    title: "El Khalya",
+    category: "Feature Film",
     video: "/videos/khalya.mp4",
   },
   {
-    title: "Showreel 2026",
+    title: "Behind The Scenes",
+    category: "DIT / Camera Workflow",
+    video: "/videos/bts.mp4",
+  },
+  {
+    title: "Cinematic Reel 2026",
+    category: "Selected Work",
     video: "/videos/showreel.mp4",
   },
+  {
+    title: "Cinematic Reel",
+    category: "Selected Work",
+    video: "/videos/reel 8.mp4",
+  },
 ];
-
-
 export default function Showreel() {
   return (
     <section
